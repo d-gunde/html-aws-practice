@@ -1,0 +1,4 @@
+-- Use prettier and live server extensions in VS code editor for formatting and launching the webpages on to default browser.
+-- Use developer tools options - elements tab to apply changes easily to the HTML document by verifying them on the browser first
+-- Use validator.w3.org website to validate the HTML file and correct any issues found
+-- Use jigsaw.w3.org/css-validator to validate the CSS code in the HTML document
