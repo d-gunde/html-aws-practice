@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Practice</title>
+    <style>
+      em {
+        color: brown;
+        font-style: normal;
+      }
+      img {
+        width: 65px;
+        height: 70px;
+        float: left;
+        margin-right: 50px;
+      }
+      h1 {
+        color: red;
+      }
+      p.intro {
+        font-weight: 200px;
+        font-family: "Lucida Sans";
+        font-style: oblique;
+        font-display: fallback;
+      }
+      em.filename {
+        font-style: italic;
+      }
+      em.tag {
+        font-family: "Courier New";
+        font-size: medium;
+        font-style: italic;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML and CSS Practice</h1>
+    <img src="images/html.jpg" alt="Html icon" />
+    <img src="images/css.png" alt="CSS icon" />
+    <br />
+    <br />
+    <p class="intro">
+      Welcome. This is practice page for learning <em>HTML and CSS</em>
+    </p>
+    <br />
+    <a href="#section-introduction">Introduction</a>
+    <br />
+    <a href="#section-html">HTML</a>
+    <br />
+    <a href="#section-htmlsections">HTML Sections</a>
+    <br />
+    <a href="#section-links">Hyperlinks</a>
+    <br />
+    <h2 id="section-introduction">Introduction</h2>
+    <p>
+      Front end application development is primarily based on HTML, CSS and
+      Javascript languages. <br />
+      Here we are trying to learn these languages to develop some basic HTML
+      webpages for practice and implement them on AWS Amplify service.
+    </p>
+    <p>Let us go through each of them in detail!!</p>
+    <p>
+      Road-map for web-development! <br />
+      HTML & CSS &LongRightArrow; Javascript &longrightarrow; React
+      &LongRightArrow; Git for version controlling.
+    </p>
+    <h2 id="section-html">HTML</h2>
+    <p>
+      Hypertext Markup Language - it is a markup language that is used for
+      defining the building blocks of a webpage. The landing page file should be
+      always named as <em class="filename">index.html</em> and the first line of
+      html file should be &lt;!DOCTYPE html &gt; <br />
+    </p>
+    <p>
+      HTML is not a case senstive language except for DOCTYPE which is usually
+      always used in uppercase letters.
+      <br />
+      HTML contains elements most of which contains opening and closing tabs
+      like for <em class="tag">head</em> and <em class="tag">body</em> elements.
+      <br />
+      There are elements that does not have closing tags for example
+      <em class="tag">img</em>. The elements that can have child elements within
+      itslef will have closing tag and since the image element is not allowed to
+      have any child elements it doesnot end with closing tag like
+      &lt;/img&gt;<br />
+    </p>
+    <br />
+    <h3 id="section-htmlsections">HTML sections</h3>
+    <p>
+      There are two main sections of HTML document - Head and body. <br />
+      Head section is used to give the browser information about the web page
+      like what is the title of the webpage, styling details, etc.
+      <br />
+      Body section contains the information that is displayed on the webpage.
+      <br />
+      This contains the paragraphs, headings and other details. <br />
+      There are 6 heading types in HTML and it is to be noted that each webpage
+      should contain only one H1 heading and the headings represent the
+      hierarchy of the document, they should not be used just to leverage their
+      font size since each heading tag can be customized using CSS.
+    </p>
+    <h3 id="section-links">Hyperlinks</h3>
+    <p>
+      Link and hyperlink are two terms that are often use interchangebly but
+      they are different. By definition links are just an address or URL
+      location of the target page, and hyperlinks are the elements the user can
+      click on the page to navigate to that target webpage. <br />
+      Hyperlinks are links to other pages or websites provided within this
+      webpage. Usually they can be created to other pages, external webpages,
+      images, etc. To create these hyperlinks on the html page we use anchor
+      element which is represented as &lt;a href=""&gt;
+      <br />
+      Here <em class="tag">href</em> stands for Hypertext reference and contains
+      the URL (Uniform Resource Locator) for the other websites.
+      <br />
+      Href can contain two types of paths - relative link and absolute links.
+      Relative link paths can be used when we want to navigate to a webpage
+      within our local directories or system. For example, I have created
+      another page to discuss CSS in detail which can be accessed by this link
+      <a href="/css.html">CSS</a>. Here the href conatins value as follows -
+      href = "/css.html".
+      <br />
+      However, if we want to jump to external websites then the link should
+      start with protocol like https or http. For example, if i want to open new
+      google window, i have to specify the link as follows - href =
+      "https://google.com". And to open the link in a new tab we have to sepcify
+      another attribute called target to "_blank".
+      <a href="https://google.com" target="_blank">Google Page</a>
+    </p>
+    <a href="#">Jump to Top</a>
+  </body>
+</html>
